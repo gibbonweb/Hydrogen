@@ -40,6 +40,11 @@ fileprefix = "hydro_"
 ; 5 = Log Debug messages & worse
 loglevel = 1
 
+[deployment]
+auto_deploy = false
+app_revision = 0
+instance_revision = 0
+
 ;*************************************************************************
 EOF;
 ?>

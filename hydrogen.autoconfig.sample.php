@@ -10,6 +10,7 @@
 namespace hydrogen;
 
 use hydrogen\config\Config;
+use hydrogen\deployment\DeploymentManager;
 use hydrogen\view\engines\hydrogen\HydrogenEngine;
 
 /***  Set the base path for the application here.  This should not be the path
@@ -58,6 +59,11 @@ Config::addConfig(
 	true, // Cache this config file?
 	true // Check for config file changes before using cached version?
 	);
+
+/***  This line configures the Deployment Manager.
+ ***/
+
+DeploymentManager::useHistory('deployment/deployment.history.php');
 
 	
 /*#  The rest of this file can be used to override user-specified config
