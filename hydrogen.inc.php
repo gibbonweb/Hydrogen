@@ -1,6 +1,6 @@
 <?php
 /*
- * Copyright (c) 2009 - 2011, Frosted Design
+ * Copyright (c) 2009 - 2012, Frosted Design
  * All rights reserved.
  *
  *************************************************************************
@@ -17,7 +17,6 @@ require_once(__DIR__ . '/autoloader/Autoloader.php');
 // All other classes are loaded through the autoloader.
 use hydrogen\autoloader\Autoloader;
 Autoloader::registerNamespace('hydrogen', __DIR__, false);
-Autoloader::register();
 
 // Run the autoconfig
 require(defined('HYDROGEN_AUTOCONFIG_PATH') ?
